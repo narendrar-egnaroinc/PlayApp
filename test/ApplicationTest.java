@@ -35,6 +35,12 @@ public class ApplicationTest {
     }
 
     @Test
+    public void simpleCheck1() {
+        int a = 1 + 1;
+        assertEquals(2, 3);
+    }
+    
+    @Test
     public void renderTemplate() {
         Content html = views.html.index.render("Your new application is ready.");
         assertEquals("text/html", contentType(html));
